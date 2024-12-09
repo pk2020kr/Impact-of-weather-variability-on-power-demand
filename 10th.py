@@ -77,3 +77,24 @@ if n%5==0:
 
 
 
+
+n = int(input())
+
+print(" -- For --")
+for i in range(n):
+    print("*", end=" ")
+
+print()
+print(" -- While --")
+    
+i = 1
+while i<=n:
+    print("*", end=" ")
+    i+=1
+    
+    
+    
+    
+    
+    
+    
