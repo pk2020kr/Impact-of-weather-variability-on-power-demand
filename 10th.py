@@ -67,4 +67,13 @@ else:
     print('negative')
     
     
-    
+n = 15
+if n%3==0:
+    print("Fizz",end="")
+if n%5==0:
+    print("Buzz")
+
+
+
+
+
