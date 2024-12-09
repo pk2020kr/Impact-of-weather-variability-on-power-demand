@@ -18,6 +18,14 @@ bool(0)
 bool(00)
 bool(0.0)
 bool(0.00)   # Any no. of zero give False
+a = bool(4.9)
+print(a)
+a = bool(0.0)
+print(a)
+
+# str
+a = bool("Pranav")
+print(a)
 
 
 
