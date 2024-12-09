@@ -43,5 +43,17 @@ print()
 print(4%3)   # Remender
 
 
-
+#python work like a logic gets are called logical operator
+print (4<2 or 4>2)
+print (4<2 and 4>2)
+print (not 4>2)
+# some need to understand
+print (4==2)  #equal
+print (4!=2)  #not equal
+print (4<=2)  #less then and equal to
+print (4>=2)  #greater then and equal to
+# show error
+#print (4=!2) 
+#print (4=<2) 
+#print (4=>2)
 
