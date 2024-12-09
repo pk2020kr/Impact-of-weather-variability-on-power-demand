@@ -101,4 +101,20 @@ print('addng from web')
     
     
     
+
+
+for i in range(4):
+    print("*", end="")
+
+print() # default end="\n"
+    
+for i in range(4):
+    print("*", end="")
+
+print("",end="\n")
+    
+for i in range(4):
+    print("*", end="")
+    
+
     
