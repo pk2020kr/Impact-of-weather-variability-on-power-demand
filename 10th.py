@@ -27,6 +27,20 @@ print(a)
 a = bool("Pranav")
 print(a)
 
+# +, -, *, /, **, //, %
+print(4+2)
+print(4-2)
+print(4*2)
+print(4**2)  # Expoment
+print(4/2)   # Devision
+print()
+print(4//2)  # in devision after doing //, we can remove after decimel part
+print(5/2)
+print(5//2)
+print(10/3)
+print(10//3)
+print()
+print(4%3)   # Remender
 
 
 
