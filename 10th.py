@@ -117,4 +117,16 @@ for i in range(4):
     print("*", end="")
     
 
-    
+ 
+ 
+ n = 8
+
+for i in range(1,n+1): # outer loop which will go over each row
+    # Some code that will print stars
+    for j in range(i): # inner loop
+        print("*",end="")
+    print()
+
+4
+
+# Make this final
