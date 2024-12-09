@@ -33,3 +33,17 @@ while n>0:
 print()
 print(sum)
 
+
+print("Step 1")
+for i in range(1,7,-2):
+    print(i, end=" ")
+    
+print("Step 2")
+
+
+
+
+
+
+
+
