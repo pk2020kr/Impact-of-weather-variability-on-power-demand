@@ -13,18 +13,23 @@ print(type(True))
 
 
 
-# Check if given number is prime
-# print "PRIME" or "NOT PRIME" 
-n = 32
-is_prime = True
+n = 453
+sum=0
+while n>0:
+    rem = n%10 # 453%10 -> 3 | 45%10 -> 5 | 4%10 -> 4
+    sum+=n%10
+    print(rem, end=" ")
+    n = n//10  # 453//10 -> 45 | 45//10 -> 4 | 4//10 -> 0
+print()
+print(sum)
 
-for number in range(2,n):
-    if n%number==0:
-        print("NOT PRIME")
-        is_prime = False
-        break
+n = 453
+sum=0
+while n>0:
+    rem = n%10 # 453%10 -> 3 | 45%10 -> 5 | 4%10 -> 4
+    sum+=n%10
+    print(rem, end=" ")
+    n = n//10  # 453//10 -> 45 | 45//10 -> 4 | 4//10 -> 0
+print()
+print(sum)
 
-if is_prime==True:
-    print("PRIME")
-    
-    
