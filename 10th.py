@@ -92,8 +92,12 @@ while i<=n:
     print("*", end=" ")
     i+=1
     
-    
-    
+
+
+
+print('addng from web')
+
+
     
     
     
