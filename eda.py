@@ -40,3 +40,41 @@ plt.grid(True)
 plt.show()
 
 # adding a new file
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Create the DataFrame with padding to equalize column lengths
+data = {
+    'voltage(V)_1': [-0.7, -0.6, -0.5, -0.4, -0.3, -0.2, -0.1,  0. ,  0.1,  0.2,  0.3, 0.4,  0.5,  0.6,  0.7],
+    'current(mA)_1': [0.002     , 0.002     , 0.002     , 0.002     , 0.002     ,0.003     , 0.003     , 0.003     , 0.003     , 0.003     ,0.005     , 0.014     , 0.065     , 0.26366667, 0.593 ],
+    'voltage(V)_2': [-0.7, -0.6, -0.5, -0.4, -0.3, -0.2, -0.1, 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7],
+    'current(mA)_2': [-0.217, -0.218, -0.217, -0.216, -0.216, -0.217, -0.217, -0.217, -0.216, -0.214, -0.206, -0.156, -0.025, 0.365, 0.764],
+    'voltage(V)_3': [0.53, 0.53, 0.53, 0.529, 0.529, 0.528, 0.527, 0.525, 0.52, 0.474, 0.469, 0.462, 0.43, 0.224, 0.126],
+    'current(mA)_3': [8, 9, 10, 11, 13, 15, 18, 25, 41, 137, 144, 154, 178, 213, 214],
+    'voltage(V)_4': [1.074, 1.072, 1.071, 1.07, 1.068, 1.066, 1.062, 1.054, 1.033, 0.729, 0.723, 0.613, 0.541, 0.417, 0.219],
+    'current(mA)_4': [14, 16, 18, 20, 23, 27, 35, 47, 79, 206, 208, 210, 211, 212, 213],
+    'voltage(V)_5': [0.544, 0.542, 0.541, 0.54, 0.539, 0.539, 0.537, 0.534, 0.516, 0.514, 0.51, 0.496, 0.49, 0.452, 0.223],
+    'current(mA)_5': [8, 9, 10, 11, 15, 18, 25, 43, 143, 154, 174, 228, 249, 346, 430]
+}
+
+# Create the DataFrame
+df = pd.DataFrame(data)
+
+# Plot the V-I graphs with labels
+plt.figure(figsize=(10, 6))
+
+# Plot each graph with a different label
+plt.plot(df['voltage(V)_1'], df['current(mA)_1'], label='Dark IV', marker='o')
+plt.plot(df['voltage(V)_2'], df['current(mA)_2'], label='Bright', marker='s')
+plt.plot(df['voltage(V)_3'], df['current(mA)_3'], label='Resistance', marker='^')
+plt.plot(df['voltage(V)_4'], df['current(mA)_4'], label='Series', marker='d')
+plt.plot(df['voltage(V)_5'], df['current(mA)_5'], label='Parallel', marker='x')
+
+# Set labels and title
+plt.xlabel('Voltage (V)')
+plt.ylabel('Current (mA)')
+plt.title('V-I Graph Comparison')
+# Add a legend
+plt.legend()
+# Show the plot
+plt.show()

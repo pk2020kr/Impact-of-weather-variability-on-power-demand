@@ -167,4 +167,14 @@ for i in range(1,n+1): # outer loop which will go over each row
     for j in range(i): # inner loop
         print("*",end="")
     print()
+for row in range(1,n+1): # outer loop which will go over each row
+    # Some code that will print stars
+    for col in range(row): # inner loop
+        print("*",end="")
     
+    if row!=n:
+        print()
+        
+        
+        
+        
