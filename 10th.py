@@ -159,3 +159,12 @@ for i in range(row + 1):
 
 
 # trying to add one more branch
+
+n = 8
+
+for i in range(1,n+1): # outer loop which will go over each row
+    # Some code that will print stars
+    for j in range(i): # inner loop
+        print("*",end="")
+    print()
+    
