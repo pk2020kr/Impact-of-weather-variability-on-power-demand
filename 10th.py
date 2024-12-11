@@ -177,4 +177,24 @@ for row in range(1,n+1): # outer loop which will go over each row
         
         
         
+     n = 10
+
+for i in range(1,n+1):
+    # Star1
+    for j in range(n-i+1):
+        print("*",end="")
         
+    # Space
+    space = 2*i - 2
+    for j in range(space):
+        print(" ",end="")
+        
+    # Star2
+    for j in range(n-i+1):
+        print("*",end="")
+    
+    print()
+    
+    
+    
+       

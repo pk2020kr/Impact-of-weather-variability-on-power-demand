@@ -78,3 +78,32 @@ plt.title('V-I Graph Comparison')
 plt.legend()
 # Show the plot
 plt.show()
+
+import matplotlib.pyplot as plt
+
+# Data for falling temperature phase
+temp_falling_C = [274, 286, 350, 375, 400, 422, 450, 474, 500, 525, 550, 574, 600, 625, 650, 675, 690]
+current_falling = [0.2, 0.4, 3.3, 6.0, 11.0, 18.0, 33.5, 56.1, 94.0, 155.0, 262.0, 444.0, 1012.0, 1750.0, 2663.0, 4170.0, 4700.0]
+
+# Data for rising temperature phase
+temp_rising_C = [50, 100, 150, 200, 250, 300, 350, 390, 400, 425, 450, 475, 500, 525, 550, 585, 600, 625, 650, 675, 689]
+current_rising = [446, 488, 39.6, 0, 0, 0, 0.1, 1.1, 1.2, 2.6, 4.0, 7.0, 13.5, 25.2, 40.0, 95.0, 140.0, 280.0, 745.0, 1335.0, 3486.0]
+
+# Plotting the data
+plt.figure(figsize=(10,6))
+
+# Plot for falling temperature phase
+plt.plot(temp_falling_C, current_falling, label="Falling Temperature", marker='o', linestyle='-')
+
+# Plot for rising temperature phase
+plt.plot(temp_rising_C, current_rising, label="Rising Temperature", marker='x', linestyle='--')
+
+# Adding labels and title
+plt.xlabel("Temperature (°C)")
+plt.ylabel("Current (µA)")
+plt.title("Ionic Conductivity: Current vs Temperature")
+plt.legend()
+plt.grid(True)
+
+# Show the plot
+plt.show()
