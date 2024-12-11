@@ -148,3 +148,14 @@ for i in range(1,n+1):
         print("*",end="")
     
     print()
+    
+    4
+    
+row = 10              # no. of row increases by one _ _ because we are adding 1 in range 
+for i in range(row + 1):
+    print (' * '*(i+1) + ' _ '*2*(row-i) + ' * '*(i+1))
+    
+    
+
+
+# trying to add one more branch
