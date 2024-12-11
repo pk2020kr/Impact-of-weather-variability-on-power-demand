@@ -167,4 +167,14 @@ def average_grade(marks):
     print('f')
     
     
-    
+  
+# youtube: differance between print and return - python
+def printsum(num1,num2):
+  sum=num1+num2
+  print(sum)
+
+def returnsum(num1,num2):
+  sum=num1+num2
+  return sum
+
+  
