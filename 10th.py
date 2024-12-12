@@ -168,3 +168,12 @@ def average_grade(marks):
     
     
     
+
+# youtube
+def add_number(n1, n2):     # hear n1 , n2  are Formal argument (which is given in def)
+  c=n1+n2
+  return c
+
+add_number(4,8)             # hear 4 , 8  are Actual argument  ( when you pass the argument) 
+                                   # 4 types - - >  Position,   Keyword,   Default,                          Variable Length
+#                                                     (4, 8)   (n2=8,n1=4)  write at end of {def line ()}. 
