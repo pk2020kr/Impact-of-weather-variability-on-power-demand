@@ -177,3 +177,31 @@ def add_number(n1, n2):     # hear n1 , n2  are Formal argument (which is given 
 add_number(4,8)             # hear 4 , 8  are Actual argument  ( when you pass the argument) 
                                    # 4 types - - >  Position,   Keyword,   Default,                          Variable Length
 #                                                     (4, 8)   (n2=8,n1=4)  write at end of {def line ()}. 
+
+# seen by youtube link https://youtu.be/-Bkupx9gX0o
+# def = defination, & inside bracket which is argument, The terms parameter = argument can be used for the same thing: information that are passed into a function. From a
+# function's perspective: A parameter is the variable listed inside the parentheses in the function definition.
+#  *  An argument is the value that are sent to the function when it is called.
+def greed(name):                                                                 # parameter = argument - - - - A value which is supplied to the function to operate on
+  print('Hi',name)                                                               
+  print('How are you',name,'?')
+
+greed('Ram')       # hear we passed ram as a argument to the greed function
+
+print()# just for spacing
+
+def add_number(n1, n2):
+  c=n1+n2
+  return c     # return function only assine the value
+
+add_number(4,8)         # hear we passed no. 4 & 6 as a argument to the add_number function
+
+print()# just for spacing
+
+def greed_return(name):
+  print('Hi',name)
+  return
+  print('How are you')
+
+greed_return('Krishna')
+
