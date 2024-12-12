@@ -148,33 +148,3 @@ for i in range(1,n+1):
         print("*",end="")
     
     print()
-
-
-# youtube
-def average_grade(marks):
-  
-  ave=sum(marks)/len(marks)
- 
-  print('your average mark is ', ave)
-
-  if ave>=80:
-    print('A')
-  elif ave>=60:
-    print('B')
-  elif ave>=40:
-    peint('c')
-  else:
-    print('f')
-    
-    
-  
-# youtube: differance between print and return - python
-def printsum(num1,num2):
-  sum=num1+num2
-  print(sum)
-
-def returnsum(num1,num2):
-  sum=num1+num2
-  return sum
-
-  
