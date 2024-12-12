@@ -148,3 +148,23 @@ for i in range(1,n+1):
         print("*",end="")
     
     print()
+
+
+# youtube
+def average_grade(marks):
+  
+  ave=sum(marks)/len(marks)
+ 
+  print('your average mark is ', ave)
+
+  if ave>=80:
+    print('A')
+  elif ave>=60:
+    print('B')
+  elif ave>=40:
+    peint('c')
+  else:
+    print('f')
+    
+    
+    
